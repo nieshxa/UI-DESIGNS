@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("./fonts/OpenSauceSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("./fonts/glacial-indifference.regular.otf") format("opentype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Glacial Indifference";
+  color: #202020;
+  cursor: default;
+}
+body {
+  background-color: #000;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  /* margin-bottom: 1rem; */
+}
+.logo-title {
+  font-family: "Open Sauce Sans";
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.logo-title iconify-icon {
+  font-size: 2rem;
+}
+.navigation {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.navigation a:not(.navigation a:nth-last-of-type(1)):hover {
+  background-image: linear-gradient(#f5e44c25, #f5e44c50, #f5e44c);
+}
+.navigation a:nth-last-of-type(1) {
+  background-color: #f5e44c;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+  width: 130px;
+  border-radius: 1rem;
+  text-align: center;
+  border: #202020 solid 1px;
+  box-shadow: #202020 0 3px 2px 0;
+}
+.navigation a:nth-last-of-type(1):hover {
+  background-image: linear-gradient(#fff, #ffffff50, #f5e44c);
+  text-transform: lowercase;
+}
+pages {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.page:nth-of-type(1) {
+  background-color: #f5e44c;
+}
+.page:nth-of-type(2) {
+  background-color: #0cfea8;
+}
+.page:nth-of-type(3) {
+  background-color: #fedaff;
+}
+.page {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page iconify-icon {
+  font-size: 2rem;
+}
+.page .title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Open Sauce Sans";
+  margin: 0.5rem 0;
+}
+.go-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #202020;
+  color: #fff;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: #202020 solid 2px;
+}
+.go-btn:hover {
+  background-color: #fff;
+  color: #202020;
+}
+.page .go-btn iconify-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.page .go-btn:hover iconify-icon {
+  color: #202020;
+}
+.motto {
+  background-image: linear-gradient(
+    to right,
+    #f4f0ed,
+    #f4f0ed,
+    #f4f0ed,
+    #f4f0ed,
+    #f6e5df,
+    #f9d9d9,
+    #f7cdd9,
+    #eec4e1,
+    #f2c2e1,
+    #f5c0e1,
+    #f9bee0,
+    #ffc4cf,
+    #ffcfc0,
+    #ffddb7,
+    #ffedba
+  );
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.motto .face {
+  align-self: flex-start;
+}
+.motto .face iconify-icon {
+  font-size: 3rem;
+  background-color: #f5e44c;
+  border-radius: 1.5rem;
+  padding: 0.25rem;
+}
+.quote {
+  font-family: "Open Sauce Sans";
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.quote span {
+  font-family: "Glacial Indifference";
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  width: 75%;
+}
+.motto-img {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: #202020;
+  box-sizing: border-box;
+  clip-path: polygon(
+    95% 53%,
+    99% 34%,
+    86% 12%,
+    59% 10%,
+    44% 1%,
+    35% 16%,
+    13% 4%,
+    3% 30%,
+    7% 46%,
+    0% 80%,
+    18% 98%,
+    41% 98%,
+    57% 87%,
+    77% 99%,
+    97% 75%
+  );
+}
+.motto-img img {
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 99%; /* container height - (border thickness * 2) */
+  height: 98%; /* container height - (border thickness * 2) */
+  clip-path: polygon(
+    95% 53%,
+    99% 34%,
+    86% 12%,
+    59% 10%,
+    44% 1%,
+    35% 16%,
+    13% 4%,
+    3% 30%,
+    7% 46%,
+    0% 80%,
+    18% 98%,
+    41% 98%,
+    57% 87%,
+    77% 99%,
+    97% 75%
+  );
+}
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+}
+.hamburger-menu iconify-icon {
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .motto {
+    display: block;
+  }
+  .quote {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .motto-img {
+    width: calc(100% - 20vw);
+    height: auto;
+    margin: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .motto-img img {
+    position: static;
+  }
+}
+@media (max-width: 900px) {
+  pages {
+    display: block;
+  }
+  .page:nth-of-type(2) {
+    margin: 1rem 0;
+  }
+}
