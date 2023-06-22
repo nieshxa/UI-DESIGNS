@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neo Brutalism</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function toggleNavigation() {
+        var navigation = document.querySelector(".navigation");
+        navigation.classList.toggle("show-navigation");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -12,13 +18,21 @@
         <iconify-icon icon="carbon:logo-yelp"></iconify-icon>Chorke
       </div>
       <div class="navigation">
-        <a href="#">Platform Solutions</a>
-        <a href="#">Clients</a>
-        <a href="#">Insights</a>
-        <a href="#">Company</a>
-        <a href="#">Contact</a>
+        <ul>
+          <li><a href="#">Platform Solutions</a></li>
+          <li><a href="#">Clients</a></li>
+          <li>
+            <a href="#">Insights</a>
+          </li>
+          <li>
+            <a href="#">Company</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
       </div>
-      <div class="hamburger-menu">
+      <div class="hamburger-menu" onclick="toggleNavigation()">
         <iconify-icon icon="charm:menu-hamburger"></iconify-icon>
       </div>
     </header>
@@ -37,9 +51,8 @@
       </div>
       <div class="motto-img">
         <img
-          src="https://www.ifc.org/wps/wcm/connect/14005b77-2ed3-4da5-a4a0-d64681bf6fa8/%C2%A9+Dominic+Chavez_+International+Finance+Corporation5.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-14005b77-2ed3-4da5-a4a0-d64681bf6fa8-o7s.2IL"
-          width="450px"
-        />
+        src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        " width="450px" />
       </div>
     </div>
     <pages>
