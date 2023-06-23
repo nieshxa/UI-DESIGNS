@@ -248,6 +248,12 @@ pages {
   cursor: pointer;
 }
 @media (max-width: 1000px) {
+  .quote {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 900px) {
   .navigation {
     display: none;
   }
@@ -288,14 +294,8 @@ pages {
   body {
     margin-top: 0;
   }
-}
-@media (max-width: 900px) {
   .motto {
     display: block;
-  }
-  .quote {
-    width: 80%;
-    margin-bottom: 1rem;
   }
   .motto-img {
     width: calc(100% - 20vw);
@@ -309,7 +309,7 @@ pages {
     position: static;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   pages {
     display: block;
   }
