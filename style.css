@@ -21,21 +21,13 @@ body {
   /*  */
 }
 header {
-  position: fixed;
-  width: calc(100% - 2rem);
-  top: 0;
-  background-color: #000;
-  padding: 1rem 0;
-  z-index: 1000;
-}
-.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
   background: #fff;
   border-radius: 0.5rem;
-  /* border-top: 1rem #000 solid; */
+  /* margin-bottom: 1rem; */
 }
 .logo-title {
   font-family: "Open Sauce Sans";
@@ -259,7 +251,7 @@ pages {
   .show-navigation {
     position: absolute;
     display: block;
-    right: 1rem;
+    right: 2rem;
     top: 4rem;
     width: fit-content;
     background-color: #fff;
