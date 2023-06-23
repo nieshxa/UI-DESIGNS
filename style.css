@@ -33,7 +33,6 @@ header {
   padding: 1rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  z-index: 1000;
   /* border-top: 1rem #000 solid; */
 }
 .logo-title {
